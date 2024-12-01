@@ -14,18 +14,20 @@
         <div class="logo">Berat's Color Scheme Generator</div>
     </header>
     <main>
-        <input type="color" id="seed-color">
-        <select name="scheme-mode" id="scheme-mode">
-            <option value="monochrome">monochrome</option>
-            <option value="monochrome-dark">monochrome-dark</option>
-            <option value="monochrome-light">monochrome-light</option>
-            <option value="analogic">analogic</option>
-            <option value="complement">complement</option>
-            <option value="analogic-complement">analogic-complement</option>
-            <option value="triad">triad</option>
-            <option value="quad">quad</option>
-        </select>
-        <button id="get-colors-btn" class="get-colors-btn">Generate Scheme</button>
+        <div class="inputs">
+            <input type="color" id="seed-color" class="input-item seed-color">
+            <select name="scheme-mode" id="scheme-mode" class="input-item">
+                <option value="monochrome">monochrome</option>
+                <option value="monochrome-dark">monochrome-dark</option>
+                <option value="monochrome-light">monochrome-light</option>
+                <option value="analogic">analogic</option>
+                <option value="complement">complement</option>
+                <option value="analogic-complement">analogic-complement</option>
+                <option value="triad">triad</option>
+                <option value="quad">quad</option>
+            </select>
+            <button id="get-colors-btn" class="get-colors-btn input-item">Generate Scheme</button>
+        </div>
         <div id="color-scheme-list" class="color-scheme-list">
             <div id="generator-colors" class="generator-colors"></div>
         </div>
