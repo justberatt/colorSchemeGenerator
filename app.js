@@ -17,7 +17,8 @@ const getColorScheme = () => {
             colors.forEach(color => {
                 const div = document.createElement('div')
                 div.className = 'generator-color'
-                div.style.backgroundColor = color.hex.value;
+                div.style.backgroundColor = color.hex.value
+                div.innerText = `${color.hex.value}`
 
                 // Accessibility attributes
                 div.setAttribute('role', 'presentation')
