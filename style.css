@@ -2,6 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    outline: none;
 }
 
 body {
@@ -9,4 +10,32 @@ body {
     margin: 0;
     font-size: 100%;
     vertical-align: baseline;
+}
+
+
+header {
+    border: 1px solid red;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    padding-left: 1em;
+}
+
+.color-scheme-list {
+    height: 100vh;
+}
+
+.generator-colors {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.generator-color {
+    width: 100%;
 }
