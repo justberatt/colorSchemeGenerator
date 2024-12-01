@@ -34,18 +34,27 @@ header {
 }
 
 .input-item {
-    flex: 1;
-    padding: 0;
-    margin: 0;
-    height: 50px;
+    flex-grow: 1;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid lightgrey;
+    outline: none;
+}
+
+.seed-color {
+    border-radius: 0;
+    background-color: white;
+    cursor: pointer;
 }
 
 button {
     cursor: pointer;
+    border: none;
+    font-size: 1rem;
 }
 
 .color-scheme-list {
-    height: calc(100vh - 146px);
+    height: calc(100vh - 136px);
 }
 
 .generator-colors {
@@ -62,4 +71,5 @@ button {
     width: 100%;
     padding-bottom: 2em;
     color: white;
+    text-shadow: 0px 0px 5px black;
 }
