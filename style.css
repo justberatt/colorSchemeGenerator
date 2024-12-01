@@ -10,24 +10,42 @@ body {
     margin: 0;
     font-size: 100%;
     vertical-align: baseline;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 
 header {
-    border: 1px solid red;
-    height: 60px;
     display: flex;
     align-items: center;
+    padding: 1em 1.5em;
+    border-bottom: 1px solid lightgrey;
 }
 
 .logo {
     font-size: 1.5rem;
-    font-family: "Bebas Neue", sans-serif;
-    padding-left: 1em;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 1.5em;
+}
+
+.input-item {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+}
+
+button {
+    cursor: pointer;
 }
 
 .color-scheme-list {
-    height: 100vh;
+    height: calc(100vh - 146px);
 }
 
 .generator-colors {
@@ -37,5 +55,11 @@ header {
 }
 
 .generator-color {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
     width: 100%;
+    padding-bottom: 2em;
+    color: white;
 }
