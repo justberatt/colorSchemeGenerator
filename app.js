@@ -14,9 +14,10 @@ const getColorScheme = () => {
             generatorColors.textContent = ''
 
             const fragment = document.createDocumentFragment()
-            colors.forEach(color => {
+            colors.forEach((color, i) => {
                 const div = document.createElement('div')
-                div.className = 'generator-color'
+                div.className = `generator-color generator-color-${i + 1}`
+                div.id = `generator-color`
                 div.style.backgroundColor = color.hex.value
                 div.innerText = `${color.hex.value}`
 
@@ -30,3 +31,9 @@ const getColorScheme = () => {
 }
 
 getColorsBtn.addEventListener('click', getColorScheme)
+
+document.addEventListener('click', (e) => {
+    if (e.target.id === 'generator-color') {
+        navigator.clipboard.writeText(e.target.textContent)
+    }
+})
