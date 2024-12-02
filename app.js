@@ -35,5 +35,6 @@ getColorsBtn.addEventListener('click', getColorScheme)
 document.addEventListener('click', (e) => {
     if (e.target.id === 'generator-color') {
         navigator.clipboard.writeText(e.target.textContent)
+        alert(`${e.target.textContent} copied to clipboard`)
     }
 })
